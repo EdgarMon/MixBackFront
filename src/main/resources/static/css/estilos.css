@@ -1,0 +1,551 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+.caja-fixed {
+    background-color:ghostwhite;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 90px;
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    z-index: 10;
+}
+
+.Marca{
+    top: 16px;
+    color: rgb(212, 68, 68);
+    left: 48%;
+    position:absolute;
+}
+.Add{
+    top: 19px;
+    color: rgb(212, 68, 68);
+    left: 17.08%;
+    position:absolute;
+}
+
+.menu{
+    left: 76%;
+    margin: 30px auto;
+    position:absolute;
+    z-index: 9;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header nav ul li:hover{
+    color: brown;
+}
+header nav ul li a{
+    color: rgb(110, 20, 20);
+    display: block;
+    text-decoration: none;
+    padding: 3.5px;
+    font-size: larger;
+}
+.menu_bar{
+    left: 76%;
+    display:none;
+}
+@media screen and (max-width: 2000px){
+    .menu_bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 2px;
+    }
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: brown;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: larger;
+    }
+    header nav{
+        
+        top: -250%;
+        width: 120px;
+        height: 190px;
+        position: fixed;
+        margin: 0;
+        background-color: ghostwhite;
+    }
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgb(110, 20, 20);
+    }
+    header nav ul li a{
+        display: block;
+    }
+}
+.contenedor{
+    right: 17.08%;
+    left: 17.08%;
+    position:absolute;
+
+}
+
+.caja1{
+    width: 17.08%;
+    height: 85px;
+    background: yellowgreen;
+    display: inline-block;
+    
+}
+.caja2{
+    width: 27.64%;
+    height: 85px;
+    background: rgb(67, 174, 189);
+    display: inline-block;
+    
+}
+.caja3{
+    width: 27.64%;
+    height: 85px;
+    background: rgb(235, 84, 210);
+    display: inline-block;
+    
+}
+.caja4{
+    width: 10.56%;
+    height: 85px;
+    background: rgb(235, 207, 84);
+    display: inline-block;
+    
+}
+.caja5{
+    width: 17.08%;
+    height: 85px;
+    background: rgb(124, 84, 235);
+    display: inline-block;
+}
+.imagenCategoria{
+    position: absolute;
+    left: 28%;
+    top: 33px;
+    border: 4px ;
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+.formularioCategoria{
+    left: 00px;
+    width: 370px;
+    height: 250px;
+    margin-top: 48px;
+    padding-top: 28px;
+    padding-left: 62px;
+    box-sizing: border-box;
+    border-radius: 1em;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    position: relative;
+    z-index: 2;
+}
+.resultadoCategoria{
+
+    position: absolute;
+    left: 0%;
+    top: 365px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 1;
+}
+.cateInput1{
+    height: 25px;
+    margin-left: 28px;
+    margin-top: 15px;
+}
+.cateInput2{
+    height: 25px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+.cateBoton1{
+    margin-left: 0px;
+    position: relative;
+    background-color: rgb(48, 222, 228);
+    font-weight: 600;
+    font-size: larger;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:250px;
+    height:32px;
+    border: 0px;
+}
+.cateBoton2{
+    margin-top: 5px;
+    position: relative;
+    background-color: rgb(241, 88, 160);
+    font-weight: 600;
+    font-size: large;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:250px;
+    height:32px;
+    border: 0;
+}
+.formularioCabin{
+    top: 500px;
+    width: 370px;
+    height: 350px;
+    padding-top: 42px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 1em;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+}
+.resultadoCabin{
+    position: absolute;
+    left: 0%;
+    top: 1216px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 1;
+}
+.imagenCabin{
+    position: absolute;
+    left: 28%;
+    top: 760px;
+    border: 4px ;
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+.cabinInput1{
+    height: 25px;
+    margin-left: 28px;
+    margin-top: 5px;
+}
+.cabinInput2{
+    height: 25px;
+    margin-left: 41px;
+    margin-top: 5px;
+}
+.cabinInput3{
+    height: 25px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+.cabinInput4{
+    height: 25px;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+.cabinInput5{
+    height: 25px;
+    margin-left: 15px;
+    width: 155px;
+    margin-top: 5px;
+}
+.cabinBoton1{
+    margin-left: 0px;
+    position: relative;
+    background-color: rgb(48, 222, 228);
+    font-weight: 600;
+    font-size: larger;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:250px;
+    height:30px;
+    border: 0;
+}
+.cabinBoton2{
+    margin-top: 5px;
+    position: relative;
+    background-color: rgb(241, 88, 160);
+    font-weight: 600;
+    font-size: large;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:250px;
+    height:30px;
+    border: 0;
+}
+.formularioCliente{
+    width: 370px;
+    height: 330px;
+    margin-top: 890px;
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    border-radius: 1em;
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+}
+.imagenCliente{
+    position: absolute;
+    left: 28%;
+    top: 1500px;
+    border: 4px ;
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+.resultadoCliente{
+    position: absolute;
+    left: 0%;
+    top: 1930px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 1;
+}
+.clientInput1{
+    margin-left: 42px;
+    margin-top: 5px;
+    height: 25px;
+}
+.clientInput2{
+    margin-left: 0px;
+    margin-top: 5px;
+    height: 25px;
+}
+.clientInput3{
+    margin-left: 25px;
+    margin-top: 5px;
+    height: 25px;
+}
+.clientInput4{
+    margin-left: 48px;
+    margin-top: 5px;
+    height: 25px;
+}
+.clientBoton1{
+    margin-left: 0px;
+    position: relative;
+    background-color: rgb(48, 222, 228);
+    font-weight: 600;
+    font-size: larger;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:250px;
+    height:30px;
+    border: 0;
+}
+.clientBoton2{
+    margin-top: 5px;
+    position: relative;
+    background-color: rgb(241, 88, 160);
+    font-weight: 600;
+    font-size: large;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:250px;
+    height:30px;
+    border: 0;
+}
+.formularioMensaje{
+    width: 370px;
+    height: 300px;
+    margin-top: 410px;
+    padding-top: 60px;
+    padding-left: 37px;
+    border-radius: 1em;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+}
+.resultadoMensaje{
+    position: absolute;
+    left: 0%;
+    top: 2640px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 1;
+}
+.imagenMensaje{
+    position: absolute;
+    left: 28%;
+    top: 2240px;
+    border: 4px ;
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+.mensajeInput1{
+    margin-left: 73px;
+    
+    height: 25px;
+    margin-top: 5px;
+}
+.mensajeInput2{
+    margin-left: 0px;
+    width: 155px;
+    margin-top: 5px;
+    height: 25px;
+}
+.mensajeInput3{
+    margin-left: 4px;
+    width: 155px;
+    margin-top: 5px;
+    height: 25px;
+}
+.mensajeBoton1{
+    margin-left: 0px;
+    position: relative;
+    background-color: rgb(48, 222, 228);
+    font-weight: 600;
+    font-size: larger;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:296px;
+    height:30px;
+    border: 0;
+}
+.mensajeBoton2{
+    margin-top: 5px;
+    position: relative;
+    background-color: rgb(241, 88, 160);
+    font-weight: 600;
+    font-size: large;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:296px;
+    height:30px;
+    border: 0;
+}
+.formularioReserva{
+    width: 370px;
+    height: 330px;
+    margin-top: 440px;
+    padding-top: 50px;
+    padding-left: 35px;
+    padding-right: 00px;
+    box-sizing: border-box;
+    border-radius: 1em;
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+}
+.resultadoReserva{
+    position: absolute;
+    left: 0%;
+    top: 3410px;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 8px;
+    z-index: 1;
+}
+.imagenReserva{
+    position: absolute;
+    left: 28%;
+    top: 2980px;
+    border: 4px ;
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+.reservaInput1{
+    margin-left: 50px;
+    margin-top: 5px;
+    height: 25px;
+}
+.reservaInput2{
+    margin-left: 10px;
+    margin-top: 5px;
+    height: 25px;
+}
+.reservaInput3{
+    margin-left: 0px;
+    width: 152px;
+    margin-top: 5px;
+    height: 25px;
+}
+.reservaInput4{
+    margin-left: 17px;
+    width: 152px;
+    margin-top: 5px;
+    height: 25px;
+}
+.reservaBoton1{
+    margin-left: 0px;
+    position: relative;
+    background-color: rgb(48, 222, 228);
+    font-weight: 600;
+    font-size: larger;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:296px;
+    height:30px;
+    border: 0;
+}
+.reservaBoton2{
+    margin-top: 5px;
+    position: relative;
+    background-color: rgb(241, 88, 160);
+    font-weight: 600;
+    font-size: large;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:296px;
+    height:30px;
+    border: 0;
+}
+.botonsecundario{
+    height:30px;
+    background-color: rgb(99, 182, 133);
+    color: ghostwhite;
+    border: 0;
+    border-radius: 7px;
+    padding: 5px;
+}
+.cosqui{
+    font-family: 'Karla', sans-serif;
+    font-size:40px;
+    font:lighter;
+    text-align: left;
+    top: 20px;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+.titulo{
+    font-family: 'Karla', sans-serif;
+    font-size:50px;
+    font:lighter;
+    text-align: left;
+    
+}
+.texto1{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+.subTitulo{
+    display: contents;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+}

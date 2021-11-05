@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+.caja-fixed {
+    background-color:ghostwhite;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 90px;
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    z-index: 10;
+}
+
+.Marca{
+    top: 16px;
+    color: rgb(212, 68, 68);
+    left: 48%;
+    position:absolute;
+}
+.Add{
+    top: 19px;
+    color: rgb(212, 68, 68);
+    left: 17.08%;
+    position:absolute;
+}
+
+.menu{
+    left: 76%;
+    margin: 30px auto;
+    position:absolute;
+    z-index: 9;
+}
+header nav ul{
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+}
+header nav ul li:hover{
+    color: brown;
+}
+header nav ul li a{
+    color: rgb(110, 20, 20);
+    display: block;
+    text-decoration: none;
+    padding: 3.5px;
+    font-size: larger;
+}
+.menu_bar{
+    left: 76%;
+    display:none;
+}
+@media screen and (max-width: 2000px){
+    .menu_bar{
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 2px;
+    }
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        color: brown;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .menu_bar span {
+        float: right;
+        font-size: larger;
+    }
+    header nav{
+        
+        top: -250%;
+        width: 120px;
+        height: 190px;
+        position: fixed;
+        margin: 0;
+        background-color: ghostwhite;
+    }
+    header nav ul li{
+        display: block;
+        border-bottom: 1px solid rgb(110, 20, 20);
+    }
+    header nav ul li a{
+        display: block;
+    }
+}
+.contenedor{
+    right: 17.08%;
+    left: 17.08%;
+    position:absolute;
+
+}
+
+.caja1{
+    width: 17.08%;
+    height: 85px;
+    background: yellowgreen;
+    display: inline-block;
+    
+}
+.caja2{
+    width: 27.64%;
+    height: 85px;
+    background: rgb(67, 174, 189);
+    display: inline-block;
+    
+}
+.caja3{
+    width: 27.64%;
+    height: 85px;
+    background: rgb(235, 84, 210);
+    display: inline-block;
+    
+}
+.caja4{
+    width: 10.56%;
+    height: 85px;
+    background: rgb(235, 207, 84);
+    display: inline-block;
+    
+}
+.caja5{
+    width: 17.08%;
+    height: 85px;
+    background: rgb(124, 84, 235);
+    display: inline-block;
+}
+.formularioReporte{
+    width: 410px;
+    height: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 1em;
+    margin-top: 40px;
+    padding-left: 63px;
+    padding-right: 33px;
+    box-shadow: 2px 2px 10px 0 rgb(191, 204, 214);
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 2;
+}
+.resultadoReserva{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 8px;
+    border-radius: 8px;
+    top: 450px;
+    left: 40px;
+    z-index: 1;
+}
+.imagenReportes{
+    position: absolute;
+    left: 28%;
+    top: 16px;
+    border: 4px ;
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+.reportImput1{
+    margin-left: 39px;
+    margin-top: 15px;
+}
+.reportImput2{
+    margin-left: 0px;
+    margin-left: 00px;
+    margin-top: 5px;
+}
+.reservaBoton1{
+    margin-left: 0px;
+    position: relative;
+    background-color: rgb(48, 222, 228);
+    font-weight: 600;
+    font-size: larger;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:296px;
+    height:30px;
+    border: 0;
+}
+.reporteBoton{
+    margin-top: 5px;
+    position: relative;
+    background-color: rgb(241, 88, 160);
+    font-weight: 600;
+    font-size: large;
+    color: ghostwhite;
+    border-radius: 5px;
+    width:296px;
+    height:30px;
+    border: 0;
+}
+.botonsecundario{
+    height:30px;
+    background-color: rgb(99, 182, 133);
+    color: ghostwhite;
+    border: 0;
+    border-radius: 7px;
+    padding: 5px;
+}
+.cosqui{
+    font-family: 'Karla', sans-serif;
+    font-size:40px;
+    font:lighter;
+    text-align: left;
+    top: 20px;
+}
+.menu li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Karla', sans-serif;
+    text-decoration: none;
+}
+.titulo{
+    font-family: 'Karla', sans-serif;
+    font-size:50px;
+    font:lighter;
+    text-align: left;
+    
+}
+.texto1{
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+.subTitulo{
+    display: contents;
+    font-family: 'Karla', sans-serif;
+    font-size: 30px;
+}

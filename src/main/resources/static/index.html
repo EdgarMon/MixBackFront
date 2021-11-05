@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/misFunciones.js"></script>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>FrontcreadoporEdgarMon </title>
+</head>
+
+<body>
+
+    <div class="caja1"></div><div class="caja2"></div><div class="caja3"></div><div class="caja4"></div><div class="caja5"></div>
+
+<header class="caja-fixed">
+    <div class="Marca"><a href="index.html"><img src="css/jpeg/imagenes cabañaas/CABIN.png"></a></div>
+    <div class="Add"><a href="client.html"><img src="css/jpeg/imagenes cabañaas/iconoSecundarioAgregar.png"></a></div>
+    <div class="menu_bar">
+        <a href="#" class="bt-menu"><span class="icon-list2"></span><img src="css/jpeg/imagenes cabañaas/menuDesplegable.png"></a>
+    </div>
+    
+    <NAV class="menu">
+        <UL>
+            <li><a href="category.html"><span class="icon-list2"></span>Categoría</a></li>
+            <li><a href="cabin.html"><span class="icon-list2"></span>Cabañas</a></li>
+            <li><a href="client.html"><span class="icon-list2"></span>Cliente</a></li>
+            <li><a href="message.html"><span class="icon-list2"></span>Mensajes</a></li>
+            <li><a href="reservation.html"><span class="icon-list2"></span>Reserva</a></li>
+            <li><a href="reportes.html"><span class="icon-list2"></span>Reporte</a></li>
+        </UL>
+    </NAV>
+    
+    
+</header>    
+
+<div class="contenedor">
+
+<!--Tabla Categoría---------------------------------------------------------------------->
+    <div class="formularioCategoria">
+        <h2>Categoría </h2>
+
+        <form action= "javascript:guardarInformacionCategorias()">
+            <label class="catelabel1">Nombre:</label>
+            <input class="cateInput1" type="text" id="Cname" placeholder="nombre" required>
+    
+            <label class="catelabel2">Descripción:</label>
+            <input class="cateInput2" type="text" id="Cdescription" placeholder="descripcion" required><br></br>
+            <input class="cateBoton1" type="submit" value="Guardar">
+      
+        </form>
+        <button class="cateBoton2" onclick="guardarInformacionCategorias()">Consultar Categorias</button>
+    </div>
+    
+    <div class="resultadoCategoria">
+        <p class="cosqui"> Catálogo</p>
+        <p class="cosqui"> Define una cabaña</p>
+        <div id="resultado1"></div>
+        <script type="text/javascript"> 
+        window.onload = autoInicioCategoria();</script>
+    </div>
+    <div class="imagenCategoria">
+        <img src="css/jpeg/imagenes cabañaas/categoriajpeg.jpg" width="100%">
+    </div>
+
+<!--Tabla Cabaña---------------------------------------------------------------------->
+
+    <div class="formularioCabin">
+        <h2>Cabañas </h2>
+    
+    <form action= "javascript:guardarInformacionCabin()">
+        <label>Nombre:</label>
+        <input class="cabinInput1"type="text" id="Oname" placeholder="nombre" required>
+
+        <label>Marca:</label>
+        <input class="cabinInput2"type="text" id="Obrand" placeholder="marca" required>
+
+        <label>Habitación:</label>
+        <input class="cabinInput3"type="number" id="Orooms" placeholder="habitación" required>
+
+        <label>Descripción:</label>
+        <input class="cabinInput4"type="text" id="Odescription" placeholder="descripcion" required>
+
+        <label>Categoría:</label>
+        <select class="cabinInput5"id="select-category" required></select><br></br>
+        <input class="cabinBoton1"type="submit" value="Guardar">
+    </form>
+    <button class="cabinBoton2"onclick="autoInicioCabin()">Consultar Cabañas</button>
+    </div>
+    
+    <div class="resultadoCabin">
+        <p class="cosqui"> Consulta</p>
+        <p class="cosqui"> de cabañas</p>
+        <div id="resultado2"></div>
+        <script type="text/javascript">
+            window.onload = autoInicioCabin();
+        </script>
+    </div>
+    
+    <div class="imagenCabin">
+        <img src="css/jpeg/imagenes cabañaas/cabañasjpeg.jpg" width="100%">
+    </div>
+
+<!--Tabla Cliente---------------------------------------------------------------------->
+
+    <div class="formularioCliente">
+        <h2>Cliente </h2>
+
+        <form action= "javascript:guardarInformacionCliente()">
+            <label>Email:</label>
+            <input class="clientInput1"type="email" id="Clemail" placeholder="email" required>
+
+            <label>Contraseña:</label>
+            <input class="clientInput2"type="password" id="Clpassword" placeholder="password" required>
+
+            <label>Nombre:</label>
+            <input class="clientInput3"type="text" id="Clname" placeholder="nombre" required>
+
+            <label>Edad:</label>
+            <input class="clientInput4"type="number" id="Clage" placeholder="edad" required><br></br>
+            <input class="clientBoton1"type="submit" value="Guardar">
+        </form>
+        <button class="clientBoton2"onclick="autoInicioCliente()">Consultar Clientes</button>
+
+    </div>
+    
+    <div class="resultadoCliente">
+        <p class="cosqui"> Registro</p>
+        <p class="cosqui"> de clientes</p>
+        <div id="resultado3"></div>
+        <script type="text/javascript"> 
+        window.onload = autoInicioCliente();
+        </script>
+    </div>
+
+    <div class="imagenCliente">
+        <img src="css/jpeg/imagenes cabañaas/clientejpeg.jpg" width="100%">
+    </div>
+
+<!--Tabla Mensjae---------------------------------------------------------------------->
+
+    <div class="formularioMensaje">
+        <h2>Mensajes </h2>
+
+        <form action="javascript:guardarInformacionMensaje()">
+
+            <label>Mensaje:</label>
+            <input class="mensajeInput1"type="text" id="messageText" placeholder="mensaje" required>
+
+            <label>Nombre de cabaña</button></label>
+            <select class="mensajeInput2"id="select-cabin" required></select>
+
+            <label>Nombre de cliente</button></label>
+            <select class="mensajeInput3"id="select-client" required></select><br></br>
+
+            <input class="mensajeBoton1"type="submit" value="Guardar">
+
+        </form>
+        <button class="mensajeBoton2"onclick="autoInicioMensaje()">Consultar mensajes</button>
+
+    </div>
+    
+    <div class="resultadoMensaje">
+        <p class="cosqui"> Mensajes</p>
+        <p class="cosqui"> de los clientes</p>
+        <div id="resultado4"></div>
+        <script type="text/javascript"> 
+        window.onload = autoInicioMensaje();
+        </script>
+    </div>
+
+    <div class="imagenMensaje">
+        <img src="css/jpeg/imagenes cabañaas/mensajejpeg.jpg" width="100%">
+    </div>
+
+<!--Tabla Reserva---------------------------------------------------------------------->
+        
+    <div class="formularioReserva">
+        <h2>Reservación </h2>
+
+        <form action="javascript:guardarInformacionReserva()">
+
+            <label>Fecha de inicio</label>
+            <input class="reservaInput1"type="date" id="startDate" placeholder="Año-Mes-Día"required>
+
+            <label>Fecha de devolución</label>
+            <input class="reservaInput2"type="date" id="devolutionDate" placeholder="Año-Mes-Día"required>
+
+            <label>Nombre de la cabaña:</button></label>
+            <select class="reservaInput3"id="select-cabin2"></select>
+
+            <label> Nombre del cliente:</button></label>
+            <select class="reservaInput4"id="select-client2"></select><br></br>
+
+            <input class="reservaBoton1"type="submit" value="Guardar reservas">
+
+        </form>
+        <button class="reservaBoton2"onclick="traerInformacionReserva()">Consultar reservas</button>
+
+    </div>
+    
+    <div class="resultadoReserva">
+        <p class="cosqui"> Reservar</p>
+        <p class="cosqui"> una cabaña</p>
+        <div id="resultado5"></div>
+        <script type="text/javascript"> 
+        window.onload = traerInformacionReserva();
+        </script>
+    </div>
+
+    <div class="imagenReserva">
+        <img src="css/jpeg/imagenes cabañaas/reservajpeg.jpg" width="100%">
+    </div>
+    
+</div>
+    
+</body>
+
+</html>

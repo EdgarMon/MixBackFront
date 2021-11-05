@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jsClient.js"></script>
+    <link rel="stylesheet" href="CSS/clientestilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>FrontcreadoporEdgarMon </title>
+</head>
+
+<body>
+    <div class="caja1"></div><div class="caja2"></div><div class="caja3"></div><div class="caja4"></div><div class="caja5"></div>
+
+    <header class="caja-fixed">
+        <div class="Marca"><a href="index.html"><img src="css/jpeg/imagenes cabañaas/CABIN.png"></a></div>
+        <div class="Add"><a href="client.html"><img src="css/jpeg/imagenes cabañaas/iconoSecundarioAgregar.png"></a></div>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="icon-list2"></span><img src="css/jpeg/imagenes cabañaas/menuDesplegable.png"></a>
+        </div>
+        
+        <NAV class="menu">
+            <UL>
+                <li><a href="category.html"><span class="icon-list2"></span>Categoría</a></li>
+                <li><a href="cabin.html"><span class="icon-list2"></span>Cabañas</a></li>
+                <li><a href="client.html"><span class="icon-list2"></span>Cliente</a></li>
+                <li><a href="message.html"><span class="icon-list2"></span>Mensajes</a></li>
+                <li><a href="reservation.html"><span class="icon-list2"></span>Reserva</a></li>
+                <li><a href="reportes.html"><span class="icon-list2"></span>Reporte</a></li>
+            </UL>
+        </NAV>
+        
+        
+    </header>    
+    
+    <div class="contenedor">
+<!--Tabla Cliente---------------------------------------------------------------------->
+
+    <div class="formularioCliente">
+        <h2>Cliente </h2>
+
+        <form action= "javascript:guardarInformacionCliente()">
+            <label>Email:</label>
+            <input class="clientInput1"type="email" id="Clemail" placeholder="email" required>
+
+            <label>Contraseña:</label>
+            <input class="clientInput2"type="password" id="Clpassword" placeholder="password" required>
+
+            <label>Nombre:</label>
+            <input class="clientInput3"type="text" id="Clname" placeholder="nombre" required>
+
+            <label>Edad:</label>
+            <input class="clientInput4"type="number" id="Clage" placeholder="edad" required><br></br>
+            <input class="clientBoton1"type="submit" value="Guardar">
+        </form>
+        <button class="clientBoton2"onclick="autoInicioCliente()">Consultar Clientes</button>
+
+    </div>
+
+    <div class="resultadoCliente">
+        <p class="cosqui"> Registro</p>
+        <p class="cosqui"> de clientes</p>
+        <div id="resultado3"></div>
+        <script type="text/javascript"> 
+        window.onload = autoInicioCliente();
+        </script>
+    </div>
+
+    <div class="imagenCliente">
+        <img src="css/jpeg/imagenes cabañaas/clientejpeg.jpg" width="100%">
+    </div>
+
+</div>
+    
+</body>
+
+</html>

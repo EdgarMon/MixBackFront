@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jsReport.js"></script>
+    <link rel="stylesheet" href="CSS/reportestilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title> FrontcreadoporEdgarMon </title>
+</head>
+
+<body>
+    <div class="caja1"></div><div class="caja2"></div><div class="caja3"></div><div class="caja4"></div><div class="caja5"></div>
+
+    <header class="caja-fixed">
+        <div class="Marca"><a href="index.html"><img src="css/jpeg/imagenes cabañaas/CABIN.png"></a></div>
+        <div class="Add"><a href="client.html"><img src="css/jpeg/imagenes cabañaas/iconoSecundarioAgregar.png"></a></div>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="icon-list2"></span><img src="css/jpeg/imagenes cabañaas/menuDesplegable.png"></a>
+        </div>
+        
+        <NAV class="menu">
+            <UL>
+                <li><a href="category.html"><span class="icon-list2"></span>Categoría</a></li>
+                <li><a href="cabin.html"><span class="icon-list2"></span>Cabañas</a></li>
+                <li><a href="client.html"><span class="icon-list2"></span>Cliente</a></li>
+                <li><a href="message.html"><span class="icon-list2"></span>Mensajes</a></li>
+                <li><a href="reservation.html"><span class="icon-list2"></span>Reserva</a></li>
+                <li><a href="reportes.html"><span class="icon-list2"></span>Reporte</a></li>
+            </UL>
+        </NAV>
+        
+        
+    </header>    
+    
+    <div class="contenedor">
+
+        <div class="formularioReporte">
+            <h2>Reportes </h2>
+            <form>
+                <label>Fecha de inicio:</label>
+                <input class="reportImput1"type="date" id="RstarDate" placeholder="descripcion">
+
+                <label>Fecha de devolución:</label>
+                <input class="reportImput2"type="date" id="RdevolutionDate" placeholder="descripcion"><br></br>
+            </form>
+            <button class="reporteBoton"onclick="traerReporteDate()"> Generar Reporte por fecha </button>
+            <div id="resultadoDate"></div>
+
+            
+            <button class="reporteBoton"onclick="traerReporteClientes()"> Generar Reporte Top Clientes</button>
+            <div id="resultadoClientes"></div>
+            <button class="reporteBoton"onclick="traerReporteStatus()"> Generar Reporte Status Reservas </button>
+            <div id="resultadoStatus"></div>
+        </div>
+    
+    
+
+    <div class="imagenReportes">
+        <img src="css/jpeg/imagenes cabañaas/reportesjpeg.jpg" width="100%">
+    </div>
+
+</body>
+</html> 

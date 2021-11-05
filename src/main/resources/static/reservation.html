@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html >
+<head>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jsReservation.js"></script>
+    <link rel="stylesheet" href="CSS/reservaestilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title> FrontcreadoporEdgarMon </title>
+</head>
+
+<body>
+    <div class="caja1"></div><div class="caja2"></div><div class="caja3"></div><div class="caja4"></div><div class="caja5"></div>
+
+    <header class="caja-fixed">
+        <div class="Marca"><a href="index.html"><img src="css/jpeg/imagenes cabañaas/CABIN.png"></a></div>
+        <div class="Add"><a href="client.html"><img src="css/jpeg/imagenes cabañaas/iconoSecundarioAgregar.png"></a></div>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="icon-list2"></span><img src="css/jpeg/imagenes cabañaas/menuDesplegable.png"></a>
+        </div>
+        
+        <NAV class="menu">
+            <UL>
+                <li><a href="category.html"><span class="icon-list2"></span>Categoría</a></li>
+                <li><a href="cabin.html"><span class="icon-list2"></span>Cabañas</a></li>
+                <li><a href="client.html"><span class="icon-list2"></span>Cliente</a></li>
+                <li><a href="message.html"><span class="icon-list2"></span>Mensajes</a></li>
+                <li><a href="reservation.html"><span class="icon-list2"></span>Reserva</a></li>
+                <li><a href="reportes.html"><span class="icon-list2"></span>Reporte</a></li>
+            </UL>
+        </NAV>
+        
+        
+    </header>    
+    
+    <div class="contenedor">
+<!--Tabla Reserva---------------------------------------------------------------------->
+        
+    <div class="formularioReserva">
+        <h2>Reservación </h2>
+
+        <form action="javascript:agregarReservation()">
+
+            <label>Fecha de inicio</label>
+            <input class="reservaInput1"type="date" id="startDate" placeholder="Año-Mes-Día"required>
+
+            <label>Fecha de devolución</label>
+            <input class="reservaInput2"type="date" id="devolutionDate" placeholder="Año-Mes-Día"required><br></br>
+
+            <label>STATUS: Estado de la Reservacion "completed / cancelled</label>
+            <input class="reservaInput3" type="text" id="status" placeholder="completed o cancelled" required>
+
+            <label>Nombre de la cabaña:</button></label>
+            <select class="reservaInput4"id="select-Cabin"></select>
+            <script type="text/javascript">
+                window.onload = autoInicioCabin();
+            </script>
+
+            <label> Nombre del cliente:</button></label>
+            <select class="reservaInput5"id="select-client"></select>
+            <script type="text/javascript">
+                window.onload = autoInicioRelacionCliente();
+            </script><br></br>
+
+            <input class="reservaBoton1"type="submit" value="Guardar reservas">
+
+        </form>
+        <button class="reservaBoton2"onclick="traerInformacionReserva()">Consultar reservas</button>
+
+    </div>
+
+    <div class="resultadoReserva">
+        <p class="cosqui"> Reservar</p>
+        <p class="cosqui"> una cabaña</p>
+        <div id="miListaReservation"></div>
+        <script type="text/javascript"> 
+        window.onload = traerInformacionReserva();
+        </script>
+    </div>
+
+    <div class="imagenReserva">
+        <img src="css/jpeg/imagenes cabañaas/reservajpeg.jpg" width="100%">
+    </div>
+    
+</div>
+    
+</body>
+
+</html>
